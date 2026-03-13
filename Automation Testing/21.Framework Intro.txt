@@ -1,0 +1,37 @@
+Factors to Starts Automation:
+
+1. Feasibility study analysis :    Yes
+2. Budgetary Analysis:             Yes
+3. Technologies :                  Yes
+4. Availability of the Resource:   Yes
+5. Infrastructure :                Yes
+
+---------------------------------------------------------
+
+Automate: functional and Regression Test case (Positive Scenario)
+
+Total Scenario is : 450
+
+210: Eligible for Automation
+
+100: Smoke Testing 
+110: Regression Testing
+
+
+-----------------------------------------------------------
+
+Framework: The setup standard and structure which will follow by every team member is called f/w
+
+The Structure way of maintaining our script is called f/w
+
+Types of f/w:
+
+1. Built-in f/w: Junit, TestNG
+2. User Defined f/w: Hybrid framework
+
+
+
+
+
+
+
