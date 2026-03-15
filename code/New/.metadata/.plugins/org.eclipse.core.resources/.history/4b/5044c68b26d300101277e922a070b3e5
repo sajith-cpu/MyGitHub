@@ -1,0 +1,36 @@
+package javaprogramadvanced;
+
+import java.util.Scanner;
+
+public class ArrayP1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] arr = {24, 56, 78, 28, 99, 44, 46};
+
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int c=0;
+
+for(int ref: arr) {
+	
+	if(ref==n) {
+		c++;
+		break;
+	}
+	
+}
+if(c==1) {
+System.out.println("present");
+}
+else
+{
+System.out.println("Absent");
+
+}
+
+
+
+	}
+
+}

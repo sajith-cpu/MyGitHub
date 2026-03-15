@@ -1,0 +1,25 @@
+package testNG;
+
+public class TestIgnoreBmAm {
+
+	@Test
+	public void t1() {
+		System.out.println("T1");
+	}
+
+	public void t2() {
+		System.out.println("T1");
+	}
+
+	public void t3() {
+		System.out.println("T1");
+	}
+
+	public void bm() {
+		System.out.println("Before Method");
+	}
+
+	public void am() {
+		System.out.println("After Method");
+	}
+}

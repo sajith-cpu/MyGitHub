@@ -1,0 +1,26 @@
+package automation;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import jxl.Sheet;
+import jxl.Workbook;
+
+public class ScrollBarOperations {
+
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver",
+				"D:\\User\\Desktop\\GSIT\\Automation Testing\\Enviornment Setup\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://htmlburger.com/blog/best-scrolling-websites/");
+		
+		JavascriptExecuter js=(JavascriptExecuter)driver
+		
+		
+		
+		 
+	}
+
+}

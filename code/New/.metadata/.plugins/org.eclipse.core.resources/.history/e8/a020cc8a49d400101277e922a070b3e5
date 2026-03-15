@@ -1,0 +1,36 @@
+package javaprogramadvanced;
+
+import java.util.Scanner;
+
+public class ArraySorting {
+
+	public static void main(String[] args) {
+		System.out.print("Enter the size of array:");
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int arr[] =new int[n];
+		System.out.println();
+		System.out.print("Enter the array elements:");
+		
+		
+		for(int i=0;i<n;i++) {
+			arr[i] = sc.nextInt();
+
+	}
+		
+		for(int i=0;j<n;i++) {// 7 3 4 6 1
+			for(int j=1;j<n;j++) {
+			if(arr[i]>arr[j]) {
+				int temp=arr[i];
+				arr[i]=arr[j];
+				arr[j]=temp;
+				
+			}
+			}
+		}
+		for(int i=0;i<n;i++) {
+		System.out.print(arr[i]);
+		}
+
+}
+}

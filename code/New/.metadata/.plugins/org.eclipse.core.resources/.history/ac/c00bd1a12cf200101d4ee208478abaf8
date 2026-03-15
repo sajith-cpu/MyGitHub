@@ -1,0 +1,41 @@
+package javaprogramadvanced;
+
+public class Anagram {
+
+	public static void main(String[] args) {
+		String s = "listen";
+		String t = "silent";
+
+		String s1[] = s.split("");
+		String t1[] = t.split("");
+
+		if (s1.length == t1.length) {
+
+			for (int i = 0; i < s1.length; i++) {
+				int t2 = 0;
+				int s2 = 0;
+				for (int j = i + 1; j < s1.length; j++) {
+					if (s1[i].equals(s1[j])) {
+						s2++;
+
+					}
+					if (t1[i].equals(t1[j])) {
+						t2++;
+
+					}
+				}
+				if (s2 == t2 && (i==(s1.length-1))) {
+					continue;
+					//System.out.print("Anagram");
+
+				} else {
+					System.out.print("Not Anagram");
+					break;
+				}
+			}
+		} else {
+			System.out.print("Not Anagram");
+		}
+	}
+
+}

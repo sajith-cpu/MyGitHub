@@ -1,0 +1,14 @@
+package automation;
+
+import org.openqa.selenium.By;
+
+public class PageObjectByClass {
+
+	public static void main(String[] args) {
+
+		By UidFb = By.id("email"); 
+		By PwdFb = By.cssSelector("[id='pass']"); 
+		By LoginFb = By.xpath("//*[@name='login']"); 
+	}
+
+}

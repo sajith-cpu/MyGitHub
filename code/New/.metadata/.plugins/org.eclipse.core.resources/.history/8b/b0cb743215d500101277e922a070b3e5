@@ -1,0 +1,25 @@
+package javaprogramadvanced;
+
+public class ArrayP3 {
+	
+	public static void m1(int x) {
+		int arr[]= {4,5,7,11,9,13,8,12};
+		int n=arr.length;
+		for (int i = 0; i < n; i++) {// 56 43 56 56 34 78 56 36 56 27
+			for (int j = i + 1; j < n; j++) {
+				if (arr[i] + arr[j]==x) {
+					System.out.print("("+arr[i]+","+arr[j]+")");
+					
+					
+				}
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+	
+	m1(20);
+	m1(22);
+	}
+
+}

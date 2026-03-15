@@ -1,0 +1,24 @@
+package automation;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class POMCalling {
+
+	public static void main(String[] args) throws InterruptedException {
+		// By Classs
+		System.setProperty("webdriver.chrome.driver",
+				"D:\\User\\Desktop\\GSIT\\Automation Testing\\Enviornment Setup\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.facebook.com");
+		driver.manage().window().maximize();
+		PageObjectByClass bc = new PageObjectByClass();
+		driver.findElement(bc.UidFb).sendKeys("ByClass");
+		Thread.sleep(3000);
+		driver.findElement(bc.PwdFb).sendKeys("ByClass");
+		Thread.sleep(3000);
+		driver.findElement(bc.LoginFb).click();
+		Thread.sleep(3000);
+		driver.close();
+	}
+}

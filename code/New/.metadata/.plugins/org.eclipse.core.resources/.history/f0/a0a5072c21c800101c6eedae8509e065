@@ -1,0 +1,19 @@
+package javaprogramadvanced;
+
+import java.util.Scanner;
+
+public class SumOfDigit {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the number:");
+		int num = sc.nextInt();
+		int s=0;
+		for(int r=0;num>0;num/=10) {
+			r%=10;
+			s=s+r;
+		}
+		System.out.println("sum of the number"+s);
+	}
+
+}

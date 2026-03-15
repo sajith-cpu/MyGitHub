@@ -1,0 +1,36 @@
+package javaprogramadvanced;
+
+import java.util.Scanner;
+
+public class ArrayDuplicateElement {
+
+	public static void main(String[] args) {
+		System.out.print("Enter the size of array:");
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int arr[] = new int[n];
+		// System.out.println();
+		System.out.print("Enter the array elements:");
+
+		for (int i = 0; i < n; i++) {
+			arr[i] = sc.nextInt();
+
+		}
+		
+
+		for (int i = 0; i < n; i++) {// 56 43 12 65 34 78 99 36 11 27
+			int c=0;
+			for (int j = i + 1; j < n; j++) {
+				if (arr[i] == arr[j]) {
+					c++;
+					if(c==1) {
+					System.out.print(arr[i] + " ");
+					break;
+					}
+				}
+			}
+		}
+
+	}
+
+}
